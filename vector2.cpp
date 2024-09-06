@@ -22,5 +22,10 @@ void display(vector<pair<int, int> > &vector) {
 int main(){
     vector<pair <int,int> > v_p = {{1,2},{2,3},{3,4}};
     display(v_p);
+    //display using iterator
+    vector<pair<int,int> > :: iterator it;
+    for(it=v_p.begin(); it!=v_p.end() ; it++ ){
+        cout<<(*it).first<<" "<<it->second<<endl;
+    }
 
 }
